@@ -1,0 +1,357 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		49324B351C275EF20007A068 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 49324B341C275EF20007A068 /* main.m */; };
+		49324B381C275EF20007A068 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 49324B371C275EF20007A068 /* AppDelegate.m */; };
+		49324B3E1C275EF20007A068 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49324B3C1C275EF20007A068 /* Main.storyboard */; };
+		49324B401C275EF20007A068 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49324B3F1C275EF20007A068 /* Assets.xcassets */; };
+		49324B431C275EF20007A068 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49324B411C275EF20007A068 /* LaunchScreen.storyboard */; };
+		49324B561C2765930007A068 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49324B551C2765930007A068 /* TableViewController.m */; };
+		49324B761C276E420007A068 /* AveBorderedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 49324B6E1C276E420007A068 /* AveBorderedButton.m */; };
+		49324B771C276E420007A068 /* AveBorderedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49324B701C276E420007A068 /* AveBorderedView.m */; };
+		49324B781C276E420007A068 /* AvePurchaseActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49324B731C276E420007A068 /* AvePurchaseActivityIndicatorView.m */; };
+		49324B791C276E420007A068 /* AvePurchaseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 49324B751C276E420007A068 /* AvePurchaseButton.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		49324B301C275EF20007A068 /* PurchaseButtonExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PurchaseButtonExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		49324B341C275EF20007A068 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		49324B361C275EF20007A068 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		49324B371C275EF20007A068 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		49324B3D1C275EF20007A068 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		49324B3F1C275EF20007A068 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		49324B421C275EF20007A068 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		49324B441C275EF20007A068 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49324B541C2765930007A068 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		49324B551C2765930007A068 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		49324B6D1C276E420007A068 /* AveBorderedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AveBorderedButton.h; sourceTree = "<group>"; };
+		49324B6E1C276E420007A068 /* AveBorderedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AveBorderedButton.m; sourceTree = "<group>"; };
+		49324B6F1C276E420007A068 /* AveBorderedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AveBorderedView.h; sourceTree = "<group>"; };
+		49324B701C276E420007A068 /* AveBorderedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AveBorderedView.m; sourceTree = "<group>"; };
+		49324B721C276E420007A068 /* AvePurchaseActivityIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvePurchaseActivityIndicatorView.h; sourceTree = "<group>"; };
+		49324B731C276E420007A068 /* AvePurchaseActivityIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvePurchaseActivityIndicatorView.m; sourceTree = "<group>"; };
+		49324B741C276E420007A068 /* AvePurchaseButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvePurchaseButton.h; sourceTree = "<group>"; };
+		49324B751C276E420007A068 /* AvePurchaseButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvePurchaseButton.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49324B2D1C275EF20007A068 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		49324B271C275EF20007A068 = {
+			isa = PBXGroup;
+			children = (
+				49324B321C275EF20007A068 /* PurchaseButtonExample */,
+				49324B311C275EF20007A068 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		49324B311C275EF20007A068 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49324B301C275EF20007A068 /* PurchaseButtonExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49324B321C275EF20007A068 /* PurchaseButtonExample */ = {
+			isa = PBXGroup;
+			children = (
+				49324B6B1C276E420007A068 /* Source */,
+				49324B361C275EF20007A068 /* AppDelegate.h */,
+				49324B371C275EF20007A068 /* AppDelegate.m */,
+				49324B3C1C275EF20007A068 /* Main.storyboard */,
+				49324B3F1C275EF20007A068 /* Assets.xcassets */,
+				49324B411C275EF20007A068 /* LaunchScreen.storyboard */,
+				49324B441C275EF20007A068 /* Info.plist */,
+				49324B331C275EF20007A068 /* Supporting Files */,
+				49324B541C2765930007A068 /* TableViewController.h */,
+				49324B551C2765930007A068 /* TableViewController.m */,
+			);
+			path = PurchaseButtonExample;
+			sourceTree = "<group>";
+		};
+		49324B331C275EF20007A068 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				49324B341C275EF20007A068 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		49324B6B1C276E420007A068 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				49324B6C1C276E420007A068 /* BorderedButton */,
+				49324B711C276E420007A068 /* PurchaseButton */,
+			);
+			name = Source;
+			path = ../../Source;
+			sourceTree = "<group>";
+		};
+		49324B6C1C276E420007A068 /* BorderedButton */ = {
+			isa = PBXGroup;
+			children = (
+				49324B6D1C276E420007A068 /* AveBorderedButton.h */,
+				49324B6E1C276E420007A068 /* AveBorderedButton.m */,
+				49324B6F1C276E420007A068 /* AveBorderedView.h */,
+				49324B701C276E420007A068 /* AveBorderedView.m */,
+			);
+			path = BorderedButton;
+			sourceTree = "<group>";
+		};
+		49324B711C276E420007A068 /* PurchaseButton */ = {
+			isa = PBXGroup;
+			children = (
+				49324B721C276E420007A068 /* AvePurchaseActivityIndicatorView.h */,
+				49324B731C276E420007A068 /* AvePurchaseActivityIndicatorView.m */,
+				49324B741C276E420007A068 /* AvePurchaseButton.h */,
+				49324B751C276E420007A068 /* AvePurchaseButton.m */,
+			);
+			path = PurchaseButton;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		49324B2F1C275EF20007A068 /* PurchaseButtonExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49324B471C275EF20007A068 /* Build configuration list for PBXNativeTarget "PurchaseButtonExample" */;
+			buildPhases = (
+				49324B2C1C275EF20007A068 /* Sources */,
+				49324B2D1C275EF20007A068 /* Frameworks */,
+				49324B2E1C275EF20007A068 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PurchaseButtonExample;
+			productName = PurchaseButtonExample;
+			productReference = 49324B301C275EF20007A068 /* PurchaseButtonExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		49324B281C275EF20007A068 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = AveApps;
+				TargetAttributes = {
+					49324B2F1C275EF20007A068 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 49324B2B1C275EF20007A068 /* Build configuration list for PBXProject "PurchaseButtonExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 49324B271C275EF20007A068;
+			productRefGroup = 49324B311C275EF20007A068 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				49324B2F1C275EF20007A068 /* PurchaseButtonExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		49324B2E1C275EF20007A068 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49324B431C275EF20007A068 /* LaunchScreen.storyboard in Resources */,
+				49324B401C275EF20007A068 /* Assets.xcassets in Resources */,
+				49324B3E1C275EF20007A068 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		49324B2C1C275EF20007A068 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49324B561C2765930007A068 /* TableViewController.m in Sources */,
+				49324B761C276E420007A068 /* AveBorderedButton.m in Sources */,
+				49324B381C275EF20007A068 /* AppDelegate.m in Sources */,
+				49324B351C275EF20007A068 /* main.m in Sources */,
+				49324B791C276E420007A068 /* AvePurchaseButton.m in Sources */,
+				49324B771C276E420007A068 /* AveBorderedView.m in Sources */,
+				49324B781C276E420007A068 /* AvePurchaseActivityIndicatorView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		49324B3C1C275EF20007A068 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49324B3D1C275EF20007A068 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		49324B411C275EF20007A068 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49324B421C275EF20007A068 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		49324B451C275EF20007A068 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		49324B461C275EF20007A068 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		49324B481C275EF20007A068 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PurchaseButtonExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aveapps.PurchaseButtonExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		49324B491C275EF20007A068 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PurchaseButtonExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aveapps.PurchaseButtonExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		49324B2B1C275EF20007A068 /* Build configuration list for PBXProject "PurchaseButtonExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49324B451C275EF20007A068 /* Debug */,
+				49324B461C275EF20007A068 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49324B471C275EF20007A068 /* Build configuration list for PBXNativeTarget "PurchaseButtonExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49324B481C275EF20007A068 /* Debug */,
+				49324B491C275EF20007A068 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 49324B281C275EF20007A068 /* Project object */;
+}
