@@ -1,5 +1,5 @@
 # AvePurchaseButton
-Drop In App Store Styled Purchase Button, with proper animations.
+Drop In App Store Styled Purchase Button, with proper animations. Title configurable in Interface Builder.
 
 ## Animations
 A gif-movie showing how the button animates from normal to confirmation to in-progress state:
