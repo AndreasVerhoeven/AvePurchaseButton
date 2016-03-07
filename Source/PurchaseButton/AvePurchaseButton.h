@@ -40,9 +40,11 @@ IB_DESIGNABLE
 
 @property (nonatomic, assign) IBInspectable AvePurchaseButtonState buttonState;
 -(void)setButtonState:(AvePurchaseButtonState)buttonState animated:(BOOL)animated;
-- (void)setTitleLabelFont:(UIFont *)font;
 
 @property (nonatomic, strong) IBInspectable UIImage* image;
+
+//Button font
+@property (nonatomic, strong) IBInspectable UIFont* titleLabelFont;
 
 // normal state colors
 @property (nonatomic, copy) IBInspectable NSString* normalTitle;

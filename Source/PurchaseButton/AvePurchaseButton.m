@@ -236,7 +236,12 @@
 	_button.highlighted = highlighted && self.buttonState != AvePurchaseButtonStateProgress;
 }
 
-- (void)setTitleLabelFont:(UIFont *)font;
+-(UIFont *)titleLabelFont
+{
+    return _button.titleLabel.font;
+}
+
+-(void)setTitleLabelFont:(UIFont *)font
 {
     _button.titleLabel.font = font;
     [self invalidateIntrinsicContentSize];
