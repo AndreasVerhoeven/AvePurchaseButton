@@ -14,6 +14,6 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/AndreasVerhoeven/AvePurchaseButton.git", :tag => "1.0.0" }
   s.source_files  = "Source", "Source/**/*.{h,m}"
   s.exclude_files = "Example"
-  s.public_header_files = "Source/**/*.h"
+  s.public_header_files = "Source/**/AvePurchaseButton.h", "Source/**/AveBorderedButton.h", "Source/**/AveBorderedButton.h"
   s.requires_arc = true
 end
