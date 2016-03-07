@@ -43,6 +43,9 @@ IB_DESIGNABLE
 
 @property (nonatomic, strong) IBInspectable UIImage* image;
 
+//Button font
+@property (nonatomic, strong) IBInspectable UIFont* titleLabelFont;
+
 // normal state colors
 @property (nonatomic, copy) IBInspectable NSString* normalTitle;
 @property (nonatomic, retain) IBInspectable UIColor* normalColor; // needed, equals tintColor
