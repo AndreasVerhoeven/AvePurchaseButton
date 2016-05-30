@@ -39,6 +39,7 @@ IB_DESIGNABLE
 
 // title for this button - no differences between states
 @property (nonatomic, copy) IBInspectable NSString* title;
+@property (nonatomic, copy) IBInspectable NSAttributedString* attributedTitle;
 @property (nonatomic, strong) IBInspectable UIImage* image;
 
 // title properties

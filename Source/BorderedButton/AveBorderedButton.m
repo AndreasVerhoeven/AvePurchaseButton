@@ -283,6 +283,17 @@ CGFloat kAveBorderedButtonDefaultCornerRadius = 4.0;
 	return self.titleLabel.text;
 }
 
+-(void)setAttributedTitle:(NSAttributedString *)attributedTitle
+{
+	self.titleLabel.attributedText = attributedTitle;
+	[self updateFillView];
+}
+
+-(NSAttributedString*)attributedTitle
+{
+	return self.titleLabel.attributedText;
+}
+
 #pragma mark - Set Image
 -(void)setImage:(UIImage *)image
 {
