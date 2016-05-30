@@ -286,7 +286,7 @@ CGFloat kAveBorderedButtonDefaultCornerRadius = 4.0;
 -(void)setAttributedTitle:(NSAttributedString *)attributedTitle
 {
 	self.titleLabel.attributedText = attributedTitle;
-	[self updateFillView];
+	[self updateFillViewWhenNeeded];
 }
 
 -(NSAttributedString*)attributedTitle
