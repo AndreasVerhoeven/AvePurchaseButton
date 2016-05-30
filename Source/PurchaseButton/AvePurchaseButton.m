@@ -31,6 +31,12 @@
 {
 	AveBorderedButton* _button;
 	AvePurchaseActivityIndicatorView* _activityIndicatorView;
+	
+	NSString* _normalTitle;
+	NSString* _confirmationTitle;
+	
+	NSAttributedString* _attributedNormalTitle;
+	NSAttributedString* _attributedConfirmationTitle;
 }
 
 -(id)initWithFrame:(CGRect)frame
@@ -199,13 +205,69 @@
 -(void)setNormalTitle:(NSString *)normalTitle
 {
 	_normalTitle = [normalTitle copy];
+	_attributedNormalTitle = nil;
 	[self updateTitle];
+}
+
+-(NSString*)normalTitle
+{
+	if(_normalTitle != nil)
+		return _normalTitle;
+	else if(_attributedNormalTitle != nil)
+		return _attributedNormalTitle.string;
+	else
+		return nil;
+}
+
+-(void)setAttributedNormalTitle:(NSAttributedString *)attributedNormalTitle
+{
+	_attributedNormalTitle = [attributedNormalTitle copy];
+	_normalTitle = nil;
+	[self updateTitle];
+}
+
+-(NSAttributedString*)attributedNormalTitle
+{
+	if(_attributedNormalTitle != nil)
+		return _attributedNormalTitle;
+	else if(_normalTitle != nil)
+		return [[NSAttributedString alloc] initWithString:_normalTitle];
+	else
+		return nil;
 }
 
 -(void)setConfirmationTitle:(NSString *)confirmationTitle
 {
 	_confirmationTitle = [confirmationTitle copy];
+	_attributedConfirmationTitle = nil;
 	[self updateTitle];
+}
+
+-(NSString*)confirmationTitle
+{
+	if(_confirmationTitle != nil)
+		return _confirmationTitle;
+	else if(_attributedConfirmationTitle != nil)
+		return _attributedConfirmationTitle.string;
+	else
+		return nil;
+}
+
+-(void)setAttributedConfirmationTitle:(NSAttributedString *)attributedConfirmationTitle
+{
+	_attributedConfirmationTitle = [attributedConfirmationTitle copy];
+	_confirmationTitle = nil;
+	[self updateTitle];
+}
+
+-(NSAttributedString*)attributedConfirmationTitle
+{
+	if(_attributedConfirmationTitle != nil)
+		return _attributedConfirmationTitle.copy;
+	else if(_confirmationTitle != nil)
+		return [[NSAttributedString alloc] initWithString:_confirmationTitle];
+	else
+		return nil;
 }
 
 -(CGSize)sizeThatFits:(CGSize)size
@@ -220,7 +282,21 @@
 
 -(void)updateTitle
 {
-	_button.title = self.buttonState == AvePurchaseButtonStateConfirmation ? self.confirmationTitle : self.normalTitle;
+	if(self.buttonState == AvePurchaseButtonStateConfirmation)
+	{
+		if(_attributedConfirmationTitle != nil)
+			_button.attributedTitle = _attributedConfirmationTitle;
+		else
+			_button.title = _confirmationTitle;
+	}
+	else
+	{
+		if(_attributedNormalTitle != nil)
+			_button.attributedTitle = _attributedNormalTitle;
+		else
+			_button.title = _normalTitle;
+	}
+	
 	[self invalidateIntrinsicContentSize];
 }
 

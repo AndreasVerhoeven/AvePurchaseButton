@@ -48,10 +48,12 @@ IB_DESIGNABLE
 
 // normal state colors
 @property (nonatomic, copy) IBInspectable NSString* normalTitle;
+@property (nonatomic, copy) IBInspectable NSAttributedString* attributedNormalTitle;
 @property (nonatomic, retain) IBInspectable UIColor* normalColor; // needed, equals tintColor
 
 // confirmation state colors
 @property (nonatomic, copy) IBInspectable NSString* confirmationTitle;
+@property (nonatomic, copy) IBInspectable NSAttributedString* attributedConfirmationTitle;
 @property (nonatomic, retain) IBInspectable UIColor* confirmationColor;
 
 @end
