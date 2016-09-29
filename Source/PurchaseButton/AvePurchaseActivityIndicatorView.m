@@ -56,6 +56,15 @@ static NSString* const kAvePurchaseActivityIndicatorViewRotationAnimationKey = @
 	}
 }
 
+- (void)layoutSubviews
+{
+	[super layoutSubviews];
+	
+	CGSize size = self.bounds.size;
+	_imageView.bounds = CGRectMake(0, 0, size.width, size.height);
+	_imageView.center = CGPointMake(size.width * 0.5, size.height * 0.5);
+}
+
 #pragma mark - Animation
 
 -(void)startAnimating
@@ -164,6 +173,8 @@ static NSString* const kAvePurchaseActivityIndicatorViewRotationAnimationKey = @
 -(UIImage*)imageForAnimation
 {
 	CGRect rc = self.bounds;
+	if(CGRectIsEmpty(rc) || CGRectIsNull(rc))
+		return nil;
 	
 	UIGraphicsBeginImageContextWithOptions(rc.size, NO, 0.0);
 	
