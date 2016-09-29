@@ -199,6 +199,12 @@
 			[self setNeedsLayout];
 		}
 	}
+	else if(self.buttonState == AvePurchaseButtonStateProgress && !animated)
+	{
+		// make sure we restart animation in re-used TableViewCells: they remove
+		// all subview animations when they get reused.
+		[_activityIndicatorView startAnimating];
+	}
 }
 
 
