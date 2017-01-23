@@ -208,6 +208,12 @@
 }
 
 
+- (void)setNormalColor:(UIColor *)normalColor
+{
+	_normalColor = normalColor;
+	[self updateTintColors];
+}
+
 -(void)setNormalTitle:(NSString *)normalTitle
 {
 	_normalTitle = [normalTitle copy];
@@ -240,6 +246,12 @@
 		return [[NSAttributedString alloc] initWithString:_normalTitle];
 	else
 		return nil;
+}
+
+- (void)setConfirmationColor:(UIColor *)confirmationColor
+{
+	_confirmationColor = confirmationColor;
+	[self updateTintColors];
 }
 
 -(void)setConfirmationTitle:(NSString *)confirmationTitle
