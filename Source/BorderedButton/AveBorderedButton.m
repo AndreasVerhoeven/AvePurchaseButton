@@ -214,6 +214,9 @@ CGFloat kAveBorderedButtonDefaultCornerRadius = 4.0;
 
 -(UIImage*)fillViewImage
 {
+    if(_fillView.bounds.size.width <= 0 || _fillView.bounds.size.height <= 0)
+        return nil;
+    
 	UIGraphicsBeginImageContextWithOptions(_fillView.bounds.size, NO, 0.0);
 	
 	[self.compatibleTintColor setFill]; // This image won't get tinted on iOS6, so pre-fill it with the right color
