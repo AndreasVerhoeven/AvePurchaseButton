@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "AvePurchaseButton"
-  s.version      = "1.0.5"
+  s.version      = "1.0.6"
   s.summary      = "iOS App Store Styled Purchase Button"
   s.description  = <<-DESC
 	Drop In App Store Styled Purchase Button, with proper animations. Title configurable in Interface Builder.
@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.author            = "Andreas Verhoeven"
   s.social_media_url   = "http://twitter.com/aveapps"
   s.platform     = :ios, "7.0"
-  s.source       = { :git => "https://github.com/AndreasVerhoeven/AvePurchaseButton.git", :tag => "1.0.5" }
+  s.source       = { :git => "https://github.com/AndreasVerhoeven/AvePurchaseButton.git", :tag => "1.0.6" }
   s.source_files  = "Source", "Source/**/*.{h,m}"
   s.exclude_files = "Example"
   s.public_header_files = "Source/**/AvePurchaseButton.h", "Source/**/AveBorderedButton.h", "Source/**/AveBorderedView.h"
